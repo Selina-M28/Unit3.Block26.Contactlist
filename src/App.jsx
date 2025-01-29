@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Contactlist from "./components/Contactlist/Contactlist";
 import SingleUserDetails from "./components/SingleUserDetails/SingleUserDetails";
 
@@ -10,7 +9,7 @@ function App() {
       <h2>{featuredUser}</h2>
       {featuredUser ? (
         <SingleUserDetails
-          setFeauredUser={setFeaturedUser}
+          setFeaturedUser={setFeaturedUser}
           featuredUser={featuredUser}
         />
       ) : (

@@ -9,7 +9,8 @@ function Contactlist({setFeaturedUser}) {
         axios("https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users")
         .then((data) => {
             {
-            console.log(data.data);
+              console.log(data);
+              console.log(data.data);
               setContacts(data.data);
             }
         })
