@@ -1,11 +1,12 @@
 import React from 'react';
 
-function ContactRow({contact}) {
+function ContactRow({contact, setFeaturedUser}) {
   return (
-    <tr><td>{contact.name}</td>
+    <tr onClick={() => setFeaturedUser(contact.id)}>
+        <td>{contact.name}</td>
         <td>{contact.email}</td>
         <td>{contact.phone}</td>
-        </tr> 
+        </tr>   
   );
 }
 
